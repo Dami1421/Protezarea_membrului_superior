@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>PuzzleImg example - Puzzle with external Image</title>
+<meta name="description" content="PuzzleImg example - Creates a simple Puzzle game with an image from an URL address" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="puzzleimg.css" />
+<script src="puzzleimg.js"></script>
+<style>
+#aa ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #663165;
+}
+
+#aa li {
+  float:left;
+}
+
+#aa li a {
+  font-family:Papyrus;
+  font-size:16px;
+  display:inline-block;
+  color:#00ffcc ;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+#aa li a:hover {
+ background-color:#00ffcc;
+  color:#663165;
+}
+#borderimg { 
+  border: 25px solid transparent;
+  padding: 15px;
+  border-image-source: url(fundalmargine.png);  
+  border-image-slice: 30;
+  font-family:Papyrus;
+  color:#f5f5f5;
+  background-color:#009778;
+}
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #009778, 0 0 40px #009778, 0 0 50px #009778, 0 0 60px #009778, 0 0 70px #009778;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #008080, 0 0 40px #008080, 0 0 50px #008080, 0 0 60px #008080, 0 0 70px #008080, 0 0 80px #008080;
+  }
+}
+footer{background-color:#663165;width:97.5%;
+  padding: 15px; color:#00ffcc; border-top: 20px solid #009778; 
+  }
+.buton a{
+color:#00ffcc;
+}
+.buton:hover{color:#f5f5f5;}
+.buton:hover{box-shadow: 0 0 50px 1px #00ffcc;border-radius: 10px;}
+.column {
+  float: left;
+  padding: 10px;
+}
+#manuta{ 
+  position: relative;
+  animation: mymove 5s infinite;
+}@keyframes mymove {
+  from {left: 0px;}
+  to {left: 980px;}
+}
+</style>
+</head>
+<body id="borderimg">
+<header id="aa">
+<nav>
+<ul >
+<li> <a href="protezare.html">Introducere</a> </li>
+<li> <a href="Etapele proiectarii echipa.html">Etapele proiectarii echipamentelor si dispozitivelor de protezare</a> </li> 
+<li> <a href="COMP PROTEZE MEMBRU SUPERIOR.html">Componeneta unei proteze de membru superior</a> </li>
+<li> <a href="Problematica protezarii mainii umane.html">Problematica protezarii mainii umane</a> </li>
+<li> <a href="Criterii de proiectare a protezelor de membru superior.html">Criterii de proiectare a protezelor de membru superior</a> </li>
+<li> <a href="Triada om-proteza-obiect.html">Triada om-proteza-obiect</a> </li>
+<li> <a href="Clasificarea protezelor.html">Clasificarea protezelor</a> </li>
+<li> <a href="Rezultate.html">Rezultate</a> </li>
+<li> <a href="Concluzii.html">Concluzii</a> </li>
+<li> <a href="puzzle_external_image.html">Puzzle</a> </li>
+</ul>
+</nav>
+</header>
+<h1 class="glow">Puzzle</h1>
+
+<div id="puz1" class="puzelm">Here it is added the canvas with the puzzle.</div>
+<script>
+//<![CDATA[
+//Creates a puzzle in the #puz1 element with an image from an external location
+//Having 5 columns and 4 rows. Setting canvas size: width=600 and height=450
+var puz1 = new PuzzleImg('puz1', 'imagine3.jpg', 3, 3, 600, 450);
+
+//rewrites the function that is called when the puzzle is completed
+//the "clicks" property contains the number of clicks
+puz1.solved = function(){
+  alert('Congratulations, you solved the puzzle in '+ puz1.clicks +' clicks');
+}
+// ]]>
+</script>
+<footer>
+<article>
+<div class="buton"><h4 style ="text-align:center;">Găină Raluca și Mirea Diana - grupa 1411 </h4></div>
+<div class="buton"><h4 style ="text-align:center;"><a href="https://fim.upb.ro">Facultatea de Inginerie Medicala,</a></h4> </div>
+<div class="buton"><h4 style ="text-align:center;"><a href="https://upb.roUniversitatea"> POLITEHNICA din București</a></h4>
+</article></div>
+<article>
+<div class="buton"><h4>REFERINȚE<h4></div>
+<ul>
+<div class="buton"><li>PROTEZAREA MEMBRULUI SUPERIOR LA PERSOANELE CU AMPUTAŢIE DE BRAŢ -Mohora Iulia1,Conducător ştiinţific: Prof.dr.ing. Constantin DOGARIU</li></div>
+<div class="buton"><li> <a href="https://m.ziare.com/amp/viata-sanatoasa/bebionic-proteza-care-ofera-o-noua-tehnologie-in-protezarea-membrului-superior-1457644">Noua tehnologie in protezarea membrului superior</a></li></div>
+<div class="buton"><li>Protezarea membrului superior si a membrului inferior  -Prof. Univ. Dr. Tiberiu Bataga , Asist. univ. Dr. Remus Opris</li></div>
+<div class="buton"><li> <a href="https://vdocuments.site/echipamente-de-protezare.html"> Echipamente de protezare </a></li></div>
+<div class="buton"><li>COMBATEREA UZURII CUPLEI BONT-LINER-SOCKET,ELEMENT ESENȚIAL ÎN MENȚINEREA CONFORTULUIȘI CALITĂȚII VIEȚII PACIENTULUI PROTEZAT- Conducător de doctorat: PROF. EMERIT DR. ING. MIHAI GAFIȚANU,Doctorand:Asist. Univ. KinetoterapeutIACOMI (ROTARIU) MARIANA</li>
+</ul></div>
+</article>
+<article id="manuta">
+<img src="mana.png" width="215" height="180" >
+</article>
+
+</footer>
+
+</body>
+</html>
+

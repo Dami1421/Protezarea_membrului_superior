@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title> PROTEZAREA MEMBRULUI SUPERIOR </title>
+<style type="text/css">
+#aa ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #663165;
+}
+
+#aa li {
+  float:left;
+}
+
+#aa li a {
+  font-family:Papyrus;
+  display:inline-block;
+  color:#00ffcc ;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+#aa li a:hover {
+ background-color:#00ffcc;
+  color:#663165;
+}
+ {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+ 
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius:50% ;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 50%;
+}
+
+
+.prev:hover, .next:hover {
+  background-color:#663165;
+  opacity:0.8;
+}
+
+
+.text {
+  color: #00ffcc;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes text {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #663165, 0 0 40px #663165, 0 0 50px #663165, 0 0 60px #663165, 0 0 70px #663165;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #9975a5 0 0 40px #9975a5, 0 0 50px #9975a5, 0 0 60px #9975a5, 0 0 70px #9975a5, 0 0 80px #9975a5;
+  }
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #663165;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #00ffcc;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+#borderimg { 
+  border: 25px solid transparent;
+  padding: 15px;
+  border-image-source: url(fundalmargine.png);  
+  border-image-slice: 30;
+  font-family:Papyrus;
+  color:#f5f5f5;
+  background-color:#009778;
+}
+.grid-container {
+border-style: solid;
+  border-color:#663165;
+  border-width: 10px;
+  background-color: #9975a5 ;
+   color:#00ffcc;
+  text-align: center;
+  padding: 20px ;
+  font-size: 20px;
+}
+.grid-container1 {
+border-style: solid;
+  border-color:#663165;
+  border-width: 10px;
+  background-color: #9975a5 ;
+  }
+
+#manuta{ 
+  position: relative;
+  animation: mymove 5s infinite;
+}@keyframes mymove {
+  from {left: 0px;}
+  to {left: 980px;}
+}
+footer{background-color:#663165;width:97.5%;
+  padding: 15px; color:#00ffcc; border-top: 20px solid #009778; 
+  }
+.buton a{
+color:#00ffcc;
+}
+.buton:hover{color:#f5f5f5;}
+.buton:hover{box-shadow: 0 0 50px 1px #00ffcc;border-radius: 10px;}
+.column {
+  float: left;
+  padding: 10px;
+}
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #009778, 0 0 40px #009778, 0 0 50px #009778, 0 0 60px #009778, 0 0 70px #009778;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #008080, 0 0 40px #008080, 0 0 50px #008080, 0 0 60px #008080, 0 0 70px #008080, 0 0 80px #008080;
+  }
+}
+.img {
+  border: 2px solid #ddd;
+  border-radius:50%;
+  padding: 5px;
+}
+.img:hover {
+  box-shadow: 0 0 35px 1px #00ffcc;
+}
+</style>
+ </head>
+<body id="borderimg">
+<header id="aa">
+<nav> 
+<ul>
+<li> <a href="protezare.html">Introducere</a> </li>
+<li> <a href="Etapele proiectarii echipa.html">Etapele proiectarii echipamentelor si dispozitivelor de protezare</a> </li> 
+<li> <a href="COMP PROTEZE MEMBRU SUPERIOR.html">Componeneta unei proteze de membru superior</a> </li>
+<li> <a href="Problematica protezarii mainii umane.html">Problematica protezarii mainii umane</a> </li>
+<li> <a href="Criterii de proiectare a protezelor de membru superior.html">Criterii de proiectare a protezelor de membru superior</a> </li>
+<li> <a href="Triada om-proteza-obiect.html">Triada om-proteza-obiect</a> </li>
+<li> <a href="Clasificarea protezelor.html">Clasificarea protezelor</a> </li>
+<li> <a href="Rezultate.html">Rezultate</a> </li>
+<li> <a href="Concluzii.html">Concluzii</a> </li>
+<li> <a href="puzzle_external_image.html">Puzzle</a> </li>
+</ul>
+</nav>
+</header>
+<p> </p>
+<div class="grid-container"> 
+<h1 class="glow">CONCLUZII</h1>
+<article style="column-count:3;">
+<p>In cazul protezarii membrului superior, pricipalul avantaj este reprezentat de factorul fuctional, persoana avand posibilitatea de a realiza activitati de prehensiune. De asemenea, acest proces are si efecte de ordin social, psihic si estetic. Un dezavantaj ar putea fi reprezentat de costul si de complexitatea procedurilor de intretinere, in functie de tipul de proteza ales ( ex. In cazul protezelor cu actiune extracorporala, costurile sunt ridicate, necesita service specializat si incarcarea periodica a bateriilor ). Pierderea  unui  membru  alterează  mobilitatea  pacientului  și  modifică  aspectul exterior  al  pacientului,  ceea  ce  se  resimte  important  la  nivel  psihologic,  familial, social  și  profesional. <br>    O  proteză  externă  poate  ajuta  pacientul  să-și  regăsească identitatea. Majoritatea persoanelor cu amputaţii de membru inferior reuşescsă înveţe  să  meargă  din  nou  şi  revin  la  viaţa  lor  obişnuită  dinaintea  amputaţiei. Adaptarea la noua situaţie necesită timp şi multă răbdare, însă trebuie menționat faptul  că  de  atitudinea  şi  aşteptările  pacientului  depinde  calitatea  vieţii  acestuia. Evoluţia  negativă,  în  timp,  a  contactului Proteză-Țesut duce  la  apariția  de durere,  dezechilibre  musculare,  tulburări  de  statică  și  în  cazuri  dramatice  la necesitatea de noi intervenții chirurgicale la un nivel superior de amputare.</p>
+<p>Una din cele mai importante cerinţe pentru o protezare funcţională este menţinerea pe cât posibil a confortului şi calităţii vieţii pacientului protezat. În acest  sens sunt foarte importante studiile şi aplicaţiile orientate, în funcţie de zona în care acţionează proteza, spre o proteză cât mai rezistentă şi performantă(incluzând proteze cu microprocesor, C-Leg, etc.), un liner/socket cu caracteristicimai bune  sau  chiar  adaptat  pentru  un  anume  pacient,  reducerea  frecării  proteză-liner-bont,  reducerea  uzurii  cuplei  bont-liner şi predicţia acestei uzuri, evitarea apariţiei  zonelor  de  tegument  modificat,  de  cicatrici keloide numiteşi hyperscar,  predicţia  apariţiei  şi  evoluţiei  acestor  zone  şi  asocierea  cu  un tratament fizio-kineto-terapeutic pentru întărirea zonei respective.</p>
+</article>
+</div>
+<p> </p>
+<div class="grid-container1">
+<p> </p>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="sld1.jpeg" style="width:100%" class="img">
+    <div class="text">PROTEZAREA MEMBRULUI SUPERIOR</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="sld2.jpeg" style="width:100%" class="img">
+    <div class="text">PROTEZAREA MEMBRULUI SUPERIOR</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="sld3.jpeg" style="width:100%" class="img">
+    <div class="text">PROTEZAREA MEMBRULUI SUPERIOR</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="sld4.jpeg" style="width:100%" class="img">
+    <div class="text">PROTEZAREA MEMBRULUI SUPERIOR</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="sld5.jpeg" style="width:100%" class="img">
+    <div class="text">PROTEZAREA MEMBRULUI SUPERIOR</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="ok.gif" style="width:100%" class="img">
+    <div class="text">PROTEZAREA MEMBRULUI SUPERIOR</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<p> </p>
+<footer>
+<article>
+<div class="buton"><h4 style ="text-align:center;">Găină Raluca și Mirea Diana - grupa 1411 </h4></div>
+<div class="buton"><h4 style ="text-align:center;"><a href="https://fim.upb.ro">Facultatea de Inginerie Medicala,</a></h4> </div>
+<div class="buton"><h4 style ="text-align:center;"><a href="https://upb.roUniversitatea"> POLITEHNICA din București</a></h4>
+</article></div>
+<article>
+<div class="buton"><h4>REFERINȚE<h4></div>
+<ul>
+<div class="buton"><li>PROTEZAREA MEMBRULUI SUPERIOR LA PERSOANELE CU AMPUTAŢIE DE BRAŢ -Mohora Iulia1,Conducător ştiinţific: Prof.dr.ing. Constantin DOGARIU</li></div>
+<div class="buton"><li> <a href="https://m.ziare.com/amp/viata-sanatoasa/bebionic-proteza-care-ofera-o-noua-tehnologie-in-protezarea-membrului-superior-1457644">Noua tehnologie in protezarea membrului superior</a></li></div>
+<div class="buton"><li>Protezarea membrului superior si a membrului inferior  -Prof. Univ. Dr. Tiberiu Bataga , Asist. univ. Dr. Remus Opris</li></div>
+<div class="buton"><li> <a href="https://vdocuments.site/echipamente-de-protezare.html"> Echipamente de protezare </a></li></div>
+<div class="buton"><li>COMBATEREA UZURII CUPLEI BONT-LINER-SOCKET,ELEMENT ESENȚIAL ÎN MENȚINEREA CONFORTULUIȘI CALITĂȚII VIEȚII PACIENTULUI PROTEZAT- Conducător de doctorat: PROF. EMERIT DR. ING. MIHAI GAFIȚANU,Doctorand:Asist. Univ. KinetoterapeutIACOMI (ROTARIU) MARIANA</li>
+</ul></div>
+</article>
+<article id="manuta">
+<img src="mana.png" width="215" height="180" >
+</article>
+
+</footer>
+</body>
+</html>
